@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+
+\input{preamble}
+
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=1,
+	angle=0,
+	contents={%
+		\begin{tikzpicture}
+			\node (img) {\includegraphics[width=\paperwidth,height=\paperheight]{template}};
+			\node [above left, text width=3.5cm, text height=3cm, align=center] at (img.south east){\Huge\color{white}\thepage\vspace{1cm}};
+		\end{tikzpicture}
+	}%
+}
+
+\begin{document}
+	
+	\subimport{"vraag 1/"}{"vraag"}
+	\subimport{"vraag 2/"}{"vraag"}
+	\subimport{"vraag 3/"}{"vraag"}
+	\subimport{"vraag 4/"}{"vraag"}
+	\subimport{"vraag 5/"}{"vraag"}
+
+\end{document}
