@@ -2,35 +2,50 @@
 
 \input{../preamble}
 
+
 \begin{document}
+	
+	\def\Arrow{{\scalebox{4}{$\Rightarrow$}}}
+	\def\Image#1{\raisebox{-.5\height}{\includegraphics[width=3cm]{#1}}}
+	
 	\begin{minipage}{\textwidth}
-		\section{Tekstmachine \hfill\small Bron: Bebras}
+		\section{Landschap \hfill\small Bron: Bebras}
+
 			
-			In deze opgave gebruiken we twee soorten tekstmachines:
-			
-			\begin{itemize}
-				\item De ''$+$'' -machine die twee stukjes tekst als invoer krijgt en als uitvoer de invoer achter elkaar plaatst.
-				\item De ''$<$'' -machine die een stukje tekst als invoer krijgt en als uitvoer de tekst achterstevoren teruggeeft.
-			\end{itemize}
+			Onze bever volgt tekenles. De tekenleraar heeft hem een aantal opdrachten gegeven die hij in volgorde moet uitvoeren:
+			\begin{enumerate}
+				\item Teken wolken op de volledige onderste helft van een blad papier.
+				\item Draai het blad een halve slag.
+				\item Teken gras op de volledige onderste helft van het blad.
+				\item Teken de zon bovenaan rechts op het blad papier.
+			\end{enumerate}
+			Als je deze opdrachten in de volgorde 1, 2, 3, 4 uitvoert, krijg je de volgende stappen:
+
 			\begin{figure}[H]
-				\raisebox{0.9\height}{\includegraphics[width=0.4\linewidth]{image1}}
-				\raisebox{0.65\height}{\includegraphics[width=0.2\linewidth]{image2}}		\includegraphics[width=0.4\linewidth]{image3}
+				\flushleft
+				\raisebox{-.5\height}{\includegraphics[width=0.27\linewidth]{image1}}
+				\raisebox{-.5\height}{$\xrightarrow{(1)}$}
+				\raisebox{-.5\height}{\includegraphics[width=0.27\linewidth]{image2}}
+				\raisebox{-.5\height}{$\xrightarrow{(2)}$}
+				\raisebox{-.5\height}{\includegraphics[width=0.27\linewidth]{image3}}
+				\raisebox{-.5\height}{$\xrightarrow{(3)}$}
+				\raisebox{-.5\height}{\includegraphics[width=0.27\linewidth]{image4}}
+				\raisebox{-.5\height}{$\xrightarrow{(4)}$}
+				\raisebox{-.5\height}{\includegraphics[width=0.27\linewidth]{image5}}
 			\end{figure}
-	
-			Door twee ''$+$'' -machines en één ''$<$'' -machine te combineren, ontstaat een meer complexe tekstmachine (rechter afbeelding). Voor deze tekstmachine zijn drie stukjes tekst nodig als invoer (in de grijze ellipsen).
 			
-			Welke drie stukjes tekst (van links naar rechts) moet je als invoer geven om als uiteindelijke uitvoer ''INFORMATIE'' te krijgen?
-	
+			Onze bever heeft de opdrachten goed begrepen, maar jammergenoeg vergist hij zich in de volgorde. Hij voert de opdrachten in de plaats uit \textbf{in de volgorde 3, 1, 2, 4}. Hoe zal zijn tekening er op het einde uitzien?
+			
 			\begin{table}[H]
-				\centering
-				\begin{tabular}{|c|c c c|}
+				\begin{tabulary}{\linewidth}{|C|C|C|C|}
 					\hline
-					\textbf{A} & FNI  & AMRO & EIT \\
-					\textbf{B} & AMR  & OFNI & EIT \\ 
-					\textbf{C} & AMR  & OFNI & TIE \\ 
-					\textbf{D} & INFO & RMA  & TIE \\
+					\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} \\
+					\includegraphics[width=\linewidth]{option1} &
+					\includegraphics[width=\linewidth]{option2} &
+					\includegraphics[width=\linewidth]{option3} &
+					\includegraphics[width=\linewidth]{option4} \\
 					\hline 
-				\end{tabular}
+				\end{tabulary}
 			\end{table}
 	\end{minipage} \\ \\
 	

@@ -4,25 +4,32 @@
 
 \begin{document}
 	\begin{minipage}{\textwidth}
-		\section{De Magische Koffer \hfill\small Bron: Bebras}
+		\section{Tekstmachine \hfill\small Bron: Bebras}
 			
-			Juffrouw Bever heeft een doos gekregen waarop zes getallen staan gegraveerd. Deze getallen stellen letters voor van een toverwoord waarmee je de doos kan openen. Met elke letter komt er precies één getal overeen - en omgekeerd.
+			In deze opgave gebruiken we twee soorten tekstmachines:
 			
+			\begin{itemize}
+				\item De ''$+$'' -machine die twee stukjes tekst als invoer krijgt en als uitvoer de invoer achter elkaar plaatst.
+				\item De ''$<$'' -machine die een stukje tekst als invoer krijgt en als uitvoer de tekst achterstevoren teruggeeft.
+			\end{itemize}
 			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.25\linewidth]{image1}
+				\raisebox{0.9\height}{\includegraphics[width=0.4\linewidth]{image1}}
+				\raisebox{0.65\height}{\includegraphics[width=0.2\linewidth]{image2}}		\includegraphics[width=0.4\linewidth]{image3}
 			\end{figure}
-			Van de vier woorden hieronder kan er slechts één het toverwoord zijn. Het welke?
+	
+			Door twee ''$+$'' -machines en \'e\'en ''$<$'' -machine te combineren, ontstaat een meer complexe tekstmachine (rechter afbeelding). Voor deze tekstmachine zijn drie stukjes tekst nodig als invoer (in de grijze ellipsen).
 			
+			Welke drie stukjes tekst (van links naar rechts) moet je als invoer geven om als uiteindelijke uitvoer ''INFORMATIE'' te krijgen?
+	
 			\begin{table}[H]
 				\centering
-				\begin{tabular}{|c c|}
+				\begin{tabular}{|c|c c c|}
 					\hline
-					\textbf{A} & BEDDEN \\ 
-					\textbf{B} & SCHORS \\  
-					\textbf{C} & APPELS \\ 
-					\textbf{D} & TUNNEL \\ 
-					\hline
+					\textbf{A} & FNI  & AMRO & EIT \\
+					\textbf{B} & AMR  & OFNI & EIT \\ 
+					\textbf{C} & AMR  & OFNI & TIE \\ 
+					\textbf{D} & INFO & RMA  & TIE \\
+					\hline 
 				\end{tabular}
 			\end{table}
 	\end{minipage} \\ \\
