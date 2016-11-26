@@ -1,0 +1,70 @@
+\documentclass[12pt, a4paper]{article}
+
+\input{../../../preamble}
+
+\begin{document}
+	\newcommand{\digit}[1]{\raisebox{-0.4\height}{\includegraphics[width=0.5cm]{#1}}}
+	\newcommand{\Digit}[1]{\raisebox{-0.4\height}{\includegraphics[width=1cm]{#1}}}
+	
+	\begin{minipage}{\textwidth}
+		\section{Digitale Display \hfill\small Bron: Bebras}
+			
+			Een digitale display bestaat uit 7 lichtsegmenten die elk afzonderlijk kunnen ingeschakeld zijn of uitgeschakeld. Op die manier kunnen we alle cijfers van 0 t.e.m. 9 voorstellen, zoals hieronder ge\"illusteerd. 
+			\begin{figure}[H]
+				\centering
+				\Digit{0}
+				\Digit{1}
+				\Digit{2}
+				\Digit{3}
+				\Digit{4}
+				\Digit{5}
+				\Digit{6}
+				\Digit{7}
+				\Digit{8}
+				\Digit{9}
+			\end{figure}
+			We laten twee bewerkingen toe op een dergelijke display.
+
+			\begin{tabulary}{\linewidth}{|L|L|}
+				\hline
+				De bewerking ''Inverteer'' & De bewerking ''Combineer'' \\ \hline
+				Schakelt de segmenten in die waren uitgeschakeld en schakelt de segmenten uit die waren ingeschakeld.
+				Bijvoorbeeld:
+				
+				Inverteer(\Digit{3}) geeft \Digit{1}
+				 &
+				Werkt in op twee displays en produceert een nieuw display waarop alle segmenten worden ingeschakeld die op minstens \'e\'en van de displays zijn ingeschakeld, en enkel deze. 
+				
+				Bijvoorbeeld: 
+				
+				Combineer(\Digit{4}, \Digit{5}) geeft \Digit{9}
+				\\ \hline
+			\end{tabulary} \\
+			
+			Welke van de onderstaande bewerkingen heeft niet \Digit{8} als resultaat?
+			
+			\begin{table}[H]
+				\centering
+				\begin{tabulary}{\linewidth}{|C|C|}
+					\hline
+					\textbf{A}
+					
+					Combineer(Inverteer( \digit{7} ), \digit{2} ) \vspace{0.1cm}
+					&
+					\textbf{B} 
+					
+					Combineer( \digit{5} , \digit{2} ) \vspace{0.1cm}
+					\\ \hline
+					\textbf{C}
+					
+					Combineer( Inverteer( \digit{0} ), \digit{0} ) \vspace{0.1cm}
+					&
+					\textbf{D}
+					
+					Combineer( Inverteer( \digit{5} ), \digit{8} ) \vspace{0.1cm}
+					\\ \hline 
+				\end{tabulary}
+			\end{table}
+	\end{minipage} \\ \\
+	
+\end{document}	

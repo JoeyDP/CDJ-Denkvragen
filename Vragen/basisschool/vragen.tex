@@ -1,6 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 
-\input{preamble}
+\input{../preamble}
 
 \backgroundsetup{
 	scale=1,
@@ -9,8 +9,8 @@
 	angle=0,
 	contents={%
 		\begin{tikzpicture}
-			\node (img) {\includegraphics[width=\paperwidth,height=\paperheight]{template}};
-			\node [above left, text width=3.5cm, text height=3cm, align=center] at (img.south east){\Huge\color{white}\thepage\vspace{1cm}};
+		\node (img) {\includegraphics[width=\paperwidth,height=\paperheight]{../template}};
+		\node [above left, text width=3.5cm, text height=3cm, align=center] at (img.south east){\Huge\color{white}\thepage\vspace{1cm}};
 		\end{tikzpicture}
 	}%
 }
@@ -23,18 +23,18 @@
 		$5^{de}$ en $6^{de}$ leerjaar basisschool
 	\end{center}
 	
-	\subimport{"vraag 1/"}{"vraag"}
-	\subimport{"vraag 2/"}{"vraag"}
-	\subimport{"vraag 3/"}{"vraag"}
-	\subimport{"vraag 4/"}{"vraag"}
-	\subimport{"vraag 5/"}{"vraag"}
-	\subimport{"vraag 6/"}{"vraag"}
-	\subimport{"vraag 7/"}{"vraag"}
-	\subimport{"vraag 8/"}{"vraag"}
-	\subimport{"vraag 9/"}{"vraag"}
-	\subimport{"vraag 10/"}{"vraag"}
-	\subimport{"vraag 11/"}{"vraag"}
-	\subimport{"vraag 12/"}{"vraag"}
-	\subimport{"vraag 13/"}{"vraag"}
+	\subimport{"../repository/bebras/vertakte fietsen/"}{"vraag"}
+	\subimport{"../repository/bebras/de magische koffer/"}{"vraag"}
+	\subimport{"../repository/bebras/animatie/"}{"vraag"}
+	\subimport{"../repository/bebras/naar beneden/"}{"vraag"}
+	\subimport{"../repository/bebras/encryptie/"}{"vraag"}
+	\subimport{"../repository/bebras/fotos schikken/"}{"vraag"}
+	\subimport{"../repository/bebras/bij de tandarts/"}{"vraag"}
+	\subimport{"../repository/bebras/landschap/"}{"vraag"}
+	\subimport{"../repository/bebras/tekstmachine/"}{"vraag"}
+	\subimport{"../repository/bebras/navigatie/"}{"vraag"}
+	\subimport{"../repository/bebras/bloemen planten/"}{"vraag"}
+	\subimport{"../repository/bebras/bebrocarina/"}{"vraag"}
+	\subimport{"../repository/bebras/robotselectie/"}{"vraag"}
 
 \end{document}
