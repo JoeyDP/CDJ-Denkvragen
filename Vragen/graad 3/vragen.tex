@@ -1,0 +1,38 @@
+\documentclass[12pt, a4paper]{article}
+
+\input{../preamble}
+
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=1,
+	angle=0,
+	contents={%
+		\begin{tikzpicture}
+		\node (img) {\includegraphics[width=\paperwidth,height=\paperheight]{../template}};
+		\node [above left, text width=3.5cm, text height=3cm, align=center] at (img.south east){\Huge\color{white}\thepage\vspace{1cm}};
+		\end{tikzpicture}
+	}%
+} 
+
+\begin{document}
+	
+	\begin{center}
+		\Huge
+		\textbf{Raadsels} \\
+		\Large
+		$3^{de}$ graad middelbaar
+	\end{center}
+	
+	\subimport{"../repository/bebras/stambomen/"}{"vraag"}
+	\subimport{"../repository/bebras/digitale display/"}{"vraag"}
+	\subimport{"../repository/bebras/tekstmachine/"}{"vraag"}
+	\subimport{"../repository/bebras/bebrocarina/"}{"vraag"}
+	\subimport{"../repository/bebras/groepswerk/"}{"vraag"}
+	\subimport{"../repository/bebras/stokken sorteren/"}{"vraag"}
+	\subimport{"../repository/bebras/boomstammentransport/"}{"vraag"}
+	\subimport{"../repository/bebras/de zagerij/"}{"vraag"}
+	\subimport{"../repository/bebras/versnijden/"}{"vraag"}
+	\subimport{"../repository/bebras/anonimisatie/"}{"vraag"}
+	\subimport{"../repository/bebras/een hoop stenen/"}{"vraag"}
+\end{document}

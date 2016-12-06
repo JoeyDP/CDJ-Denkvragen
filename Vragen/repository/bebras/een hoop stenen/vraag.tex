@@ -1,0 +1,43 @@
+\documentclass[12pt, a4paper]{article}
+
+\input{../preamble}
+
+\begin{document}
+	\begin{minipage}{\textwidth}
+		\section{Een Hoop Stenen \hfill\small Bron: Bebras}
+			Ward de Bever speelt met drie stapels stenen, Wanneer het spel begint, bevat elke stapel het volgende aantal stenen:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c c c}
+					\textbf{Stapel 1} & \textbf{Stapel 2} & \textbf{Stapel 3} \\
+					11 stenen & 21 stenen & 31 stenen \\
+				\end{tabular}
+			\end{table}
+			Bij elke beurt kiest Ward twee stapels en verplaatst dan van de grootste stapel naar de kleinste evenveel stenen als de kleinste stapel bevat.
+			
+			Zou Ward bijvoorbeeld stapels 1 en 2 kiezen, dan moet hij 11 stenen verplaatsen van stapel 2 naar stapel 1, met het volgende resultaat:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c c c}
+					\textbf{Stapel 1} & \textbf{Stapel 2} & \textbf{Stapel 3} \\
+					22 stenen & 10 stenen & 31 stenen \\
+				\end{tabular}
+			\end{table}
+			Ward mag zoveel keer stenen verplaatsen als hij maar wil, als hij maar deze regel blijft volgen. Hij mag bij elke beurt ook telkens de twee stapels die hij wil gebruiken, vrij kiezen.
+			
+			Als we vertrekken vanuit de situatie uit de eerste tabel (11,21,31 stenen), dan kan Ward maar \'e\'en van de opties bereiken die hieronder zijn geschetst. Welke?
+	
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{A} & 20, 22, 24 \\
+					\textbf{B} & 21, 21, 21 \\ 
+					\textbf{C} & 25, 13, 25 \\ 
+					\textbf{D} & 24, 28, 11 \\
+					\hline 
+				\end{tabular}
+			\end{table}
+	\end{minipage} \\ \\
+	
+\end{document}	
