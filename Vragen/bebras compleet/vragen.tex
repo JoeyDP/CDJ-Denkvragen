@@ -2,18 +2,22 @@
 
 \input{../preamble}
 
-\backgroundsetup{
-	scale=1,
-	color=black,
-	opacity=1,
-	angle=0,
-	contents={%
-		\begin{tikzpicture}
-		\node (img) {\includegraphics[width=\paperwidth,height=\paperheight]{../template}};
-		\node [above left, text width=3.5cm, text height=3cm, align=center] at (img.south east){\Huge\color{white}\thepage\vspace{1cm}};
-		\end{tikzpicture}
-	}%
-}
+%\usepackage{background}
+%\backgroundsetup{
+%	scale=1,
+%	color=black,
+%	opacity=1,
+%	angle=0,
+%	contents={%
+%		\begin{tikzpicture}
+%		\node (img) {\includegraphics[width=\paperwidth,height=\paperheight]{../template}};
+%		\node [above left, text width=3.5cm, text height=3cm, align=center] at (img.south east){\Huge\color{white}\thepage\vspace{1cm}};
+%		\end{tikzpicture}
+%	}%
+%}
+
+\usepackage{watermark}
+\thiswatermark{\centering \put(-57, -742) {\includegraphics[width=\paperwidth, height=\paperheight]{../template}} } 
 
 \begin{document}
 	\begin{center}
@@ -43,7 +47,6 @@
 	\subimport{"../repository/bebras/een hoop stenen/"}{"vraag"}
 	\subimport{"../repository/bebras/digitale display/"}{"vraag"}
 	\subimport{"../repository/bebras/groepswerk/"}{"vraag"}
-	\subimport{"../repository/bebras/robotselectie/"}{"vraag"}
 	\subimport{"../repository/bebras/stambomen/"}{"vraag"}
 	\subimport{"../repository/bebras/stokken sorteren/"}{"vraag"}
 	\subimport{"../repository/bebras/versnijden/"}{"vraag"}
