@@ -1,0 +1,77 @@
+\documentclass[12pt, a4paper, landscape]{article}
+
+\usepackage[top=1cm, left=0.2cm, right=0.5cm, bottom=2cm]{geometry}
+\usepackage{import}
+\usepackage{forloop}
+
+\newcounter{rownumbers}
+\newcommand\rownumber{\stepcounter{rownumbers}\arabic{rownumbers}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+	\newcounter{themenumber}
+	\forloop{themenumber}{1}{\value{themenumber} < 3}{
+		\begin{minipage}{0.5\linewidth}
+			
+			\setcounter{rownumbers}{0}
+			
+			\begin{center}
+				\Huge
+				\textbf{Antwoorden} \\
+				\Large
+				Alle Vragen
+			\end{center}
+				
+			\begin{tabular}{@{}ll}
+				\vspace{0.1cm} \hspace{0.01cm} \rownumber.
+				\subimport{"../repository/bebras/vertakte fietsen/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/de magische koffer/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/animatie/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/naar beneden/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/encryptie/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/fotos schikken/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/bij de tandarts/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/landschap/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/tekstmachine/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/navigatie/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/bloemen planten/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/bebrocarina/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/robotselectie/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/anonimisatie/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/de pijlen veranderen/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/de zagerij/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/boomstammentransport/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/een hoop stenen/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/digitale display/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/groepswerk/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/stambomen/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/stokken sorteren/"}{"antwoord"}
+				\vspace{0.1cm} \rownumber. 
+				\subimport{"../repository/bebras/versnijden/"}{"antwoord"}
+			\end{tabular}
+		\end{minipage}
+	}
+
+\end{document}
